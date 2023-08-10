@@ -1,0 +1,20 @@
+{
+  "type": "dun_gen:dungeon",
+  "generator": {
+    "type": "flat",
+    "biome_source": {
+      "type": "fixed",
+      "noise_settings": "minecraft:overworld",
+      "biome": "minecraft:the_void"
+    },
+    "settings": {
+      "layers": [
+        {
+          "height": 256,
+          "block": "minecraft:stone"
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
