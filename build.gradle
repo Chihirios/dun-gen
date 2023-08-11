@@ -91,9 +91,6 @@ repositories {
 
 dependencies {
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
-
-
-    runtimeOnly fg.deobf("maven.modrinth:here-be-no-dragons:Fi3C0IO5")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
