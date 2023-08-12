@@ -3,35 +3,13 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "dungen:red1",
+        "location": "dungen:redwalk",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
       "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "dungen:red2",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 4
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "dungen:red3",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 1
     }
   ],
   "fallback": "minecraft:empty"

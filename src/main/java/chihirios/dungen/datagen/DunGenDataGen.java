@@ -49,9 +49,7 @@ public class DunGenDataGen {
         bootstrap.register(pool("dungeon/red"), new StructureTemplatePool(
                 emptyPool,
                 ImmutableList.of(
-                        template("red1", 2),
-                        template("red2", 4),
-                        template("red3", 1)
+                        template("redwalk", 2)
                 ),
                 StructureTemplatePool.Projection.RIGID
         ));
