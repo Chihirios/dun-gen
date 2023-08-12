@@ -22,7 +22,7 @@ public class DunGenData extends SavedData {
     }
 
     public static DunGenData get(MinecraftServer server) {
-        return server.overworld().getDataStorage().computeIfAbsent(DunGenData::load, DunGenData::new, "dun-gen");
+        return server.overworld().getDataStorage().computeIfAbsent(DunGenData::load, DunGenData::new, "dungen");
     }
 
     public int increment() {

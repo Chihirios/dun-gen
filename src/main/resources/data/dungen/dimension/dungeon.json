@@ -1,5 +1,5 @@
 {
-  "type": "dun_gen:dungeon",
+  "type": "dungen:dungeon",
   "generator": {
     "type": "flat",
     "biome_source": {

@@ -4,7 +4,6 @@ import chihirios.dungen.generator.DunGenData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -16,13 +15,13 @@ public class DunGenCommand {
     @SubscribeEvent
     public static void register(RegisterCommandsEvent event) {
         event.getDispatcher().register(
-                literal("dun-gen")
+                literal("dungen")
                         .then(literal("generate")
                                 .executes(ctx -> {
                                     // generate new dungeon and take player there
                                     var index = DunGenData.get(ctx.getSource().getServer()).increment();
-                                    var dungeonDim = ctx.getSource().getServer().getLevel(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dun_gen", "dungeon")));
-                                    var structure = ctx.getSource().getServer().getStructureManager().get(new ResourceLocation("dun_gen", "start")).orElse(null);
+                                    var dungeonDim = ctx.getSource().getServer().getLevel(ResourceKey.create(Registries.DIMENSION, DunGen.id("dungeon")));
+                                    var structure = ctx.getSource().getServer().getStructureManager().get(DunGen.id("start")).orElse(null);
                                     if (dungeonDim == null || structure == null) return 0;
                                     var pos = new BlockPos(index * 1000, 0, 0);
                                     // var bounds = structure.getBoundingBox(pos, Rotation.NONE, pos, Mirror.NONE);

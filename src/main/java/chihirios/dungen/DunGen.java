@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(DunGen.MODID)
 public class DunGen {
-    public static final String MODID = "dun_gen";
+    public static final String MODID = "dungen";
 
     public static ResourceLocation id(String path) {
         return new ResourceLocation(MODID, path);
