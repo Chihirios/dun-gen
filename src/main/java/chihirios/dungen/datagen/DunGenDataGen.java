@@ -55,5 +55,13 @@ public class DunGenDataGen {
                 ),
                 StructureTemplatePool.Projection.RIGID
         ));
+
+        bootstrap.register(pool("dungeon/start"), new StructureTemplatePool(
+                emptyPool,
+                ImmutableList.of(
+                        template("start", 1)
+                ),
+                StructureTemplatePool.Projection.RIGID
+        ));
     }
 }
